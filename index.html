@@ -284,6 +284,98 @@
             display: inline-block;
         }
 
+        .card-container {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        /* GRID */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        /* CARD */
+
+        .card-container {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .card-container h3 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .card-container .subtitle {
+            color: #777;
+            margin-bottom: 50px;
+        }
+
+        /* GRID LAYOUT */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        /* CARD */
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        /* IMAGE WRAPPER (optional but clean) */
+        .card-img-wrapper {
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* SQUARE IMAGE */
+        .card img {
+            width: 200px;
+            height: 200px;
+            aspect-ratio: 5 /5;
+            object-fit: cover;
+            border-radius: 80px;
+            transition: transform 0.3s;
+        }
+
+        /* TEXT */
+        .card h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* HOVER EFFECT */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
         /* BRANDS SECTION */
         .brands-container {
             display: flex;
@@ -557,7 +649,46 @@
     </section>
 
     </section>
+    <section class="card-container">
 
+        <h3>All-organic products</h3>
+        <p class="subtitle">
+            Vitae turpis massa sed elementum tempus fet scelerisque varius morbi.
+        </p>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <img src="https://bridge71.qodeinteractive.com/wp-content/uploads/2016/07/main-home-image-4.jpg"
+                    alt="product1">
+                <h4>Best organic food</h4>
+                <p>Far etra diam sit amet nisl suscipit adipiscing.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://bridge71.qodeinteractive.com/wp-content/uploads/2016/07/main-home-image-5.jpg"
+                    alt="product2">
+                <h4>Feel the nature</h4>
+                <p>Far etra diam sit amet nisl suscipit adipiscing.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://bridge71.qodeinteractive.com/wp-content/uploads/2016/07/main-home-image-6.jpg"
+                    alt="product3">
+                <h4>Spices and herbs</h4>
+                <p>Far etra diam sit amet nisl suscipit adipiscing.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://bridge71.qodeinteractive.com/wp-content/uploads/2016/07/main-home-image-7.jpg"
+                    alt="product4">
+                <h4>Organic vegetables</h4>
+                <p>Far etra diam sit amet nisl suscipit adipiscing.</p>
+            </div>
+
+        </div>
+
+    </section>
     <section class="facts-section">
         <div class="facts-image">
             <img src="https://bridge71.qodeinteractive.com/wp-content/uploads/2016/07/main-home-image-2.jpg"
